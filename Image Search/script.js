@@ -41,6 +41,14 @@ showMoreBtn.addEventListener('click',() =>{
     searchImages()
 })
 
+
+searchBox.addEventListener('keyup' , (e) =>{
+    if(e.key === 'Enter') {
+        e.preventDefault();
+        searchImages();
+    }
+    page++
+})
 // const animals = ['donkey', 'elephant', 'dog', 'cow', 'crow', 'hen'];
 // let selectedAnimalIndex = 0;
 
